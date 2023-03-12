@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operadores de comparação</title>
+    <style>
+        body{
+            
+            font: normal 25pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+                
+        window.prompt ('Informe o Nome do Aluno')
+        var n1 =window.prompt('informe a nota da primeira avaliação')
+        var n2 =window.prompt('informe a nota da segunda avaliação')
+        var faltas =window.prompt ('informe o número de faltas do aluno')
+        
+
+
+       n1 =parseFloat (n1)
+       n2 =parseFloat (n2)
+
+       var notaFinal=(n1+n2)/2
+       var media = 7
+       var faltasMaxima = 15
+
+       if(notaFinal >= media && faltas<=faltasMaxima){
+         
+        document.write('Aluno Aprovado com média'+ notaFinal)
+        
+       }
+       else{
+        document.write('Aluno Reprovado')
+       }
+
+
+
+        
+        
+    </script>
+</body>
+</html>
